@@ -8,31 +8,51 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".LoginEmailActivity">
+    tools:context=".RegistroEmailActivity">
 
     <TextView
-        android:text="@string/txt_login"
+        android:text="@string/txt_registro"
         android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-    <ImageView
-        android:src="@drawable/ic_login"
-        android:layout_marginTop="15dp"
-        android:layout_width="100dp"
-        android:layout_height="100dp"/>
+        android:layout_height="wrap_content"/>
 
-    <!--Email-->
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_registro_usuario"
+        android:layout_marginTop="15dp"/>
+
+    <!--Nombres-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_Nombres"
+            android:hint="@string/et_Nombres"
+            android:inputType="textCapWords|textPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--Correo-->
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <EditText
             android:id="@+id/et_Email"
             android:hint="@string/et_Email"
             android:inputType="textEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <!--Password-->
@@ -40,40 +60,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true">
+
         <EditText
-            android:id="@+id/ed_Password"
+            android:id="@+id/et_Password"
             android:hint="@string/et_Password"
             android:inputType="textPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
+
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!--Boton ingresar-->
+    <!--Repita la contraseña-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_R_Password"
+            android:hint="@string/et_R_Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_Ingresar"
-        android:text="@string/btn_Ingresar"
+        android:id="@+id/btn_Registrar"
+        android:text="@string/btn_Registrar"
         android:textAllCaps="true"
         android:layout_marginTop="15dp"
         app:cornerRadius="8dp"
-        android:textSize="18sp"
         android:layout_width="250dp"
         android:layout_height="wrap_content"/>
-
-    <TextView
-        android:text="@string/txt_no_tienes_cuenta"
-        android:textSize="15sp"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/tv_registrarme"
-        android:text="@string/tv_registrarme"
-        android:textAllCaps="true"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,5 +1,6 @@
 package com.example.apparqchatv01
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.apparqchatv01.databinding.ActivityMainBinding
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        irOpcionesLogin()
 
         //Fragmento por default o defecto
         verFragmentoPerfil()
@@ -40,6 +43,9 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    private fun irOpcionesLogin(){
+        startActivity(Intent(applicationContext, OpcionesLoginActivity::class.java))
+    }
     private fun verFragmentoPerfil(){
         binding.tvTitulo.text = "Perfil"
         val fragment = FragmentPerfil()
