@@ -7,17 +7,25 @@ import com.example.apparqchatv01.databinding.ActivityMainBinding
 import com.example.apparqchatv01.fragmentos.FragmentChats
 import com.example.apparqchatv01.fragmentos.FragmentPerfil
 import com.example.apparqchatv01.fragmentos.FragmentUsuarios
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        irOpcionesLogin()
+        firebaseAuth = FirebaseAuth.getInstance()
+
+        if (firebaseAuth.currentUser == null){
+            irOpcionesLogin()
+        }
+
+
 
         //Fragmento por default o defecto
         verFragmentoPerfil()

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34245498302",
+    "project_id": "chatkotlin200834may24",
+    "storage_bucket": "chatkotlin200834may24.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34245498302:android:53486978b7f85c9180d5ef",
+        "android_client_info": {
+          "package_name": "com.example.apparqchatv01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9rkzw7FFXnQu8IF0bqDoRAIuTX9PPQqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
