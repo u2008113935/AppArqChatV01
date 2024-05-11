@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "34245498302",
-    "project_id": "chatkotlin200834may24",
-    "storage_bucket": "chatkotlin200834may24.appspot.com"
+    "project_number": "814585628749",
+    "project_id": "chatkotlin-fdb28",
+    "storage_bucket": "chatkotlin-fdb28.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:34245498302:android:53486978b7f85c9180d5ef",
+        "mobilesdk_app_id": "1:814585628749:android:4b95876bf51b3b36d33404",
         "android_client_info": {
           "package_name": "com.example.apparqchatv01"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyC9rkzw7FFXnQu8IF0bqDoRAIuTX9PPQqI"
+          "current_key": "AIzaSyAcU4CV7O5nX17ZmdeZTftZmlHzGJj0STM"
         }
       ],
       "services": {
